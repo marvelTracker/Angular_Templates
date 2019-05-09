@@ -2,22 +2,22 @@ import { Component, OnInit } from '@angular/core';
 
 
 
-export interface Hero {
+export interface Product {
   id: number;
   name: string;
 }
 
-export const HEROES: Hero[] = [
-  { id: 11, name: 'Mr. Nice' },
-  { id: 12, name: 'Narco' },
-  { id: 13, name: 'Bombasto' },
-  { id: 14, name: 'Celeritas' },
-  { id: 15, name: 'Magneta' },
-  { id: 16, name: 'RubberMan' },
-  { id: 17, name: 'Dynama' },
-  { id: 18, name: 'Dr IQ' },
-  { id: 19, name: 'Magma' },
-  { id: 20, name: 'Tornado' }
+export const Products: Product[] = [
+  { id: 1233, name: 'Mr. Nice' },
+  { id: 4233, name: 'Narco' },
+  { id: 933, name: 'Bombasto' },
+  { id: 799, name: 'Celeritas' },
+  { id: 111, name: 'Magneta' },
+  { id: 3434, name: 'RubberMan' },
+  { id: 5234, name: 'Dynama' },
+  { id: 75645, name: 'Dr IQ' },
+  { id: 1459, name: 'Magma' },
+  { id: 2450, name: 'Tornado' }
 ];
 
 @Component({
@@ -27,13 +27,12 @@ export const HEROES: Hero[] = [
 
 
 export class ProductListComponent implements OnInit {
-title:string;
-heroes:Hero[];
+title: string;
+products: Product[];
 
   ngOnInit(): void {
-    console.log('Hero list' + HEROES[0].name);
     this.title = 'Product List';
-    this.heroes = HEROES;
+    this.products = Products;
   }
 
 }
