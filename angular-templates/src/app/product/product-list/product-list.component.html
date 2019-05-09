@@ -1,0 +1,13 @@
+
+<table class="table table-sm table-primary">
+    <thead>
+    <th># Product ID</th>
+    <th>Product name</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products" class="table-warning">
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    </tr>
+    </tbody>
+  </table>
