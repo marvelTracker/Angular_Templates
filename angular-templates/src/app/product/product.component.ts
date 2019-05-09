@@ -1,16 +1,10 @@
 import { Component } from '@angular/core';
-import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
- })
+  //styleUrls: ['./app.component.css']
+})
 export class ProductComponent {
   title = 'product';
-
-constructor(private _router: Router) { }
-
-  navigateProductList(): void {
-    this._router.navigate(['/products/list']);
-  }
 }
